@@ -16,3 +16,151 @@ header{
     background-color:hsl(217, 28%, 15%);
 }
 
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.logo .nav ul{
+    display: flex;
+}
+
+.logo .nav ul a{
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+}
+
+.logo .nav ul a:hover{
+    color: #ffa500;
+}
+
+.logo-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-cont .image-cont{
+    width: 500px;
+}
+
+.logo-cont .head-cont{
+    width: 600px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.logo-cont .para-cont{
+    width: 400px;
+    color: hsla(0, 0%, 100%, 0.673);
+    margin: 30px 0;
+    text-align: center;
+}
+
+.logo-cont .btn-cont{
+    width: 200px;
+    height: 48px;
+    border-radius: 30px;
+    background:  hsl(176, 68%, 64%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.main-back{
+    background-color: hsl(217, 28%, 15%);
+}
+
+.page-back{
+    display: flex;
+    width: 900px;
+    margin: -5px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:  0 100px;
+    padding: 30px;
+    max-width: 100%;
+}
+
+.page-back .help{
+    width: 350px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.page-back .help h3{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin: 10px;
+}
+
+.page-back .help p{
+    color: hsla(0, 0%, 100%, 0.673);
+    font-weight: 300;
+    margin: 10px;
+}
+
+.productive{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 100%;
+}
+
+.productive .image-productive{
+    width: 500px;
+}
+
+.productive .productive-cont{
+    width: 600px;
+}
+
+.productive .productive-cont h2{
+    font-size: 55px;
+    color: hsla(0, 0%, 100%, 0.673);
+    margin-bottom: 10px;
+}
+
+.productive .productive-cont p{
+    color: hsla(0, 0%, 100%, 0.673);
+    font-weight: 300;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.productive .productive-cont a{
+    display: flex;
+    border-bottom: 1px solid hsla(176, 68%, 64%, 0.729);
+    color: hsla(176, 68%, 64%, 0.729);
+    padding-bottom: 10px;
+    width: 180px;
+    font-size: 15px;
+}
+.productive .productive-cont a img{
+    margin-left: 25px;
+}
+
+.inputs #submit{
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    background:  hsl(176, 68%, 64%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
