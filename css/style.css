@@ -10,58 +10,56 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
 header{
     font-family: 'Raleway', sans-serif;
     background-color:hsl(217, 28%, 15%);
 }
-
-.logo{
+.image-logo{
+   width: 100%;
+   margin-top: -230px; 
+}
+.logo-s{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
 }
-
-.logo .nav ul{
+.logo-s .nav ul{
     display: flex;
+    gap: 25px;
 }
-
-.logo .nav ul a{
+.logo-s .nav ul a{
     display: inline-block;
     color: hsl(0, 0%, 100%);
 }
-
-.logo .nav ul a:hover{
+.logo-s .nav ul a:hover{
     color: #ffa500;
 }
-
 .logo-cont{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .logo-cont .image-cont{
     width: 500px;
 }
-
 .logo-cont .head-cont{
     width: 600px;
     color: hsl(0, 0%, 100%);
     margin-top: 30px;
     text-align: center;
+    z-index: 1;
 }
-
 .logo-cont .para-cont{
     width: 400px;
     color: hsla(0, 0%, 100%, 0.673);
     margin: 30px 0;
+    z-index: 1;
     text-align: center;
 }
-
 .logo-cont .btn-cont{
+    z-index: 1;
     width: 200px;
     height: 48px;
     border-radius: 30px;
@@ -69,11 +67,9 @@ header{
     color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
-
 .main-back{
-    background-color: hsl(217, 28%, 15%);
+    background-color:  hsl(218, 28%, 13%);
 }
-
 .page-back{
     display: flex;
     width: 900px;
@@ -85,19 +81,17 @@ header{
     padding: 30px;
     max-width: 100%;
 }
-
 .page-back .help{
     width: 350px;
     text-align: center;
     margin: 20px 10px;
+    
 }
-
 .page-back .help h3{
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     margin: 10px;
 }
-
 .page-back .help p{
     color: hsla(0, 0%, 100%, 0.673);
     font-weight: 300;
@@ -112,33 +106,30 @@ header{
     margin: 0 auto;
     padding: 30px;
     width: 100%;
+    
 }
-
 .productive .image-productive{
     width: 500px;
 }
-
 .productive .productive-cont{
     width: 600px;
 }
-
 .productive .productive-cont h2{
     font-size: 55px;
-    color: hsla(0, 0%, 100%, 0.673);
+    color: hsl(0, 0%, 100%);
     margin-bottom: 10px;
+    
 }
-
 .productive .productive-cont p{
     color: hsla(0, 0%, 100%, 0.673);
     font-weight: 300;
     margin: 10px 0;
     text-align: justify;
 }
-
 .productive .productive-cont a{
     display: flex;
-    border-bottom: 1px solid hsla(176, 68%, 64%, 0.729);
-    color: hsla(176, 68%, 64%, 0.729);
+    border-bottom: 1px solid  hsla(176, 68%, 64%, 0.729);
+    color:hsla(176, 68%, 64%, 0.684);
     padding-bottom: 10px;
     width: 180px;
     font-size: 15px;
@@ -147,6 +138,78 @@ header{
     margin-left: 25px;
 }
 
+.cards-collaboration{
+    display: grid;
+    background-color:  hsl(218, 28%, 13%);
+    align-items: center;
+    padding: 5% 10% ;
+    margin-top: -3px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding-bottom: 160px;
+    gap: 30px;
+    min-width: 100%;
+}
+.card{
+    padding: 40px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background:  hsl(219, 30%, 18%);
+}
+.card  h4{
+    color: hsl(0, 0%, 100%);
+}
+.card p{
+    color: hsla(0, 0%, 100%, 0.673);
+}
+.card .collaboration{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.card .collaboration .collaboration-names{
+    margin-left: 10px;
+}
+.collaboration-names p{
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.673);
+}
+.card img{
+    width: 40px;
+    border-radius: 50%;
+}
+.get-cont{
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: hsl(217, 28%, 15%);
+    margin-top: -120px ;
+}
+.get-cont h5{
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    padding: 20px;
+}
+.get-cont p{
+    color: hsla(0, 0%, 100%, 0.673);
+    margin-bottom: 20px;
+}
+.get-cont .inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+.inputs #email{
+    width: 70%;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 30px;
+}
 .inputs #submit{
     height: 40px;
     width: 200px;
@@ -155,12 +218,72 @@ header{
     color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
-
-.fa{
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
+.get-cont {
+    text-align: start;
+    margin-left:60px;
+    font-size: 14px;
 }
+.get-cont {
+    text-align: start;
+    margin-left:60px;
+    font-size: 14px;
+    color: #008000;
+}
+
+.down{
+    background:  hsl(216, 53%, 9%);
+    display: grid;
+    padding-top: 25px;
+    padding: 0 5%;
+    min-width: 100%;
+    margin-top: -2px;
+}
+.down .down-logo{
+    margin: 2% 0;
+}
+.down-cont{
+    display: flex;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.down-cont .icon-map{
+    display: flex;
+    width: 400px;
+}
+.down-cont .icon-map img{
+    height: 20px;
+}
+.down-cont .icon-map p{
+    padding: 0 20px;
+    color: hsla(0, 0%, 100%, 0.673);
+}
+.down-cont .contact .phone,
+.down-cont .contact .email{
+    display: flex;
+    margin-bottom: 20px;
+}
+.down-cont .contact .phone p,
+.down-cont .contact .email p {
+    color: hsla(0, 0%, 100%, 0.673);
+    margin-left: 15px;
+}
+.nav-footer ul a, .page-nav-footer ul a{
+    color: hsla(0, 0%, 100%, 0.673);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.nav-footer ul a:hover, .page-nav-footer ul a:hover{
+    color: #fff;
+}
+.down-cont .social{
+    border: 1px solid hsla(0, 0%, 100%, 0.673);
+    color: hsla(0, 0%, 100%, 0.673);
+    padding: 10px;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+.down-cont .social{
+    color:  hsl(176, 68%, 64%);
+}
+
